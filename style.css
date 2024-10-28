@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --menu-height: 44px;
+    --page-padding: 60px;
+}
+
+* {
+    font-family: 'Afacad Flux', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.71rem;
+}
+
+h1 i {
+    margin-right: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-image: radial-gradient(49% 81% at 45% 99%, #0294d5FF 0%, #03446CFF 100%);
+    position: relative;
+    color: #fff;
+    padding: 0 var(--page-padding);
+    height: 30rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    padding-top: 35px;
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu ul {
+    height: var(--menu-height);
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.menu a {
+    font-size: 21px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0 2.5rem;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu div {
+    height: calc(var(--menu-height) / 2);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: .7rem;
+}
+
+.menu div > a {
+    background: #03446CFF;
+    font-weight: 500;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 0.5rem;
+}
+
+.hero-image {
+    width: 45rem;
+    position: absolute;
+    right: 0;
+    bottom: -5rem;
+}
+
+header section {
+    position: absolute;
+    bottom: 45px;
+}
+
+header section h2 {
+    font-size: 3.25rem;
+}
+
+header section a {
+    background: orange;
+    border-radius: 25px;
+    display: block;
+    width: 10rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25rem;
+    padding: .7rem;
+}
+
+header section i {
+    margin-right: 0.24rem;
+}
+
+.services {
+    padding: 0 var(--page-padding);
+}
+
+.services > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+h3 {
+    font-size: 2.1rem;
+    text-decoration: underline;
+}
+
+h4 {
+    font-size: 24px;
+}
