@@ -38,7 +38,7 @@
             <h2>IT Support</h2> <span class="pipe">|</span> <h2>Websites & App Design</h2>
 
             <p>
-                Ridgeway's local consultant for all things tech and creative.
+                Ridgeway's local consultant for all things technology and media.
             </p>
 
             <p>
@@ -49,7 +49,14 @@
                 Get top-tier solutions tailored to your business needs.
             </p>
 
-            <a href="tel:289-207-4259"><i class="fa fa-phone"></i> 289<span>-</span>207<span>-</span>4259</a>
+            <div class="phone-button">
+                <a href="#!" onclick="showElement()" id="click-to-show">
+                    <i class="fa fa-phone"></i> CLICK TO VIEW
+                </a>
+                <a href="tel:289-207-4259" id="phone-number">
+                    <i class="fa fa-phone"></i> 289<span>-</span>207<span>-</span>4259
+                </a>
+            </div>
         </section>
 
         <img 
@@ -68,23 +75,23 @@
 
         <div>
             <div>
-                <i class="fa fa-laptop"></i>
-                <h4>Computers & Laptops</h4>
+                <img src="images/cloud-computing.png" alt="">
+                <h4>Computers & Electronics</h4>
                 <p>
 
                 </p>
             </div>
 
             <div>
-                <i class="fa fa-envelope-o"></i>
+                <img src="images/email-marketing.png" alt="">
                 <h4>Email & Software</h4>
                 <p>
                     
                 </p>
             </div>
-
+            
             <div>
-                <i class="fa fa-wifi"></i>
+                <img src="images/home-theatre.png" alt="">
                 <h4>Equipment & Audio/Visual</h4>
                 <p>
                     
@@ -92,7 +99,11 @@
             </div>
 
             <div>
-                <i class="fa fa-mobile"></i>
+                <img 
+                    src="images/launch.png" 
+                    alt=""
+                    class="web-apps"
+                >
                 <h4>Websites & Mobile Apps</h4>
                 <p>
                     
@@ -100,7 +111,7 @@
             </div>
 
             <div>
-                <i class="fa fa-paint-brush"></i>
+                <img src="images/web-design.png" alt="">
                 <h4>Social Media & Graphics</h4>
                 <p>
                     
@@ -113,6 +124,17 @@
         <h6>
             Website coded by <a href="https://brandontech.ca">Brandon Winger-Air</a> © 2024
         </h6>
+        <img src="images/cat-1.webp" alt="">
     </footer>
+
+    <script>
+        function showElement() {
+            var element = document.getElementById("click-to-show");
+            element.style.display = "none";
+
+            var element = document.getElementById("phone-number");
+            element.style.display = "block";
+        }
+    </script>
 </body>
 </html>

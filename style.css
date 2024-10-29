@@ -137,18 +137,30 @@ nav {
     font-weight: 600;
 }
 
-.hero-section a {
+.phone-button {
+
     background: #FF8E08;
     border-radius: 25px;
     display: block;
     width: 12rem;
     text-align: center;
-    color: #000;
     font-weight: 800;
     font-size: 1.25rem;
     letter-spacing: 1px;
     padding: 0.7rem;
     margin-top: 50px;
+}
+
+#phone-number {
+    display: none;
+}
+
+#click-to-show {
+    font-weight: 400;
+}
+
+.hero-section a {
+    color: #000;
 }
 
 .hero-section a span {
@@ -194,17 +206,26 @@ h3 {
     padding-bottom: 14px;
 }
 
-.services i {
-    font-size: 3rem;
+.services img {
+    width: 150px;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
+/* Footer Section */
 footer {
     text-align: center;
     font-size: 1.8rem;
     border-top: 2px solid #212121;
     margin-top: 150px;
+}
+
+footer h6 {
+    margin-bottom: 1.45rem;
+}
+
+footer img {
+    width: 80px;
 }
