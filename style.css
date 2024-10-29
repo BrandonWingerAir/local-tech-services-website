@@ -2,7 +2,7 @@
 
 :root {
     --menu-height: 44px;
-    --page-padding: 60px;
+    --page-padding: 85px;
 }
 
 * {
@@ -26,19 +26,20 @@ a {
     text-decoration: none;
 }
 
+/* Header Section */
 header {
     background-image: radial-gradient(49% 81% at 45% 99%, #0294d5FF 0%, #03446CFF 100%);
     position: relative;
     color: #fff;
     padding: 0 var(--page-padding);
-    height: 30rem;
+    height: 40rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     height: 2rem;
-    padding-top: 35px;
+    padding-top: 50px;
 }
 
 .menu {
@@ -82,40 +83,52 @@ nav {
     padding: 0.5rem;
 }
 
-.hero-image {
-    width: 45rem;
+/* Hero Section */
+.hero-section {
     position: absolute;
-    right: 0;
-    bottom: -5rem;
+    bottom: 50px;
+    width: 50vw;
 }
 
-header section {
-    position: absolute;
-    bottom: 45px;
+.hero-section h2 {
+    font-size: 4.2rem;
+    margin: 0;
 }
 
-header section h2 {
-    font-size: 3.25rem;
+.hero-section p {
+    font-size: 1.5rem;
+    margin: 14px 0;
 }
 
-header section a {
+.hero-section a {
     background: orange;
     border-radius: 25px;
     display: block;
-    width: 10rem;
+    width: 12rem;
     text-align: center;
     color: #fff;
     font-weight: 800;
     font-size: 1.25rem;
-    padding: .7rem;
+    padding: 0.7rem;
+    margin-top: 50px;
 }
 
-header section i {
-    margin-right: 0.24rem;
+.hero-section i {
+    margin-right: 0.35rem;
 }
 
+.hero-image {
+    width: 50rem;
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+}
+
+/* Services Section */
 .services {
-    padding: 0 var(--page-padding);
+    padding: calc(var(--page-padding) - 1.5rem) var(--page-padding) 0;
+    padding-bottom: 0;
+    text-align: center;
 }
 
 .services > div {
@@ -123,11 +136,28 @@ header section i {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+.title-container {
+    width: 14rem;
+    border-bottom: 2px solid #000;
+    margin-bottom: 55px;
+}
+
 h3 {
+    margin: 0;
+    text-align: left;
     font-size: 2.1rem;
-    text-decoration: underline;
+    padding-bottom: 14px;
+}
+
+.services i {
+    font-size: 3rem;
 }
 
 h4 {
     font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    font-size: 22px;
 }
