@@ -232,7 +232,7 @@ footer img {
 }
 
 /* Mobile Responsive */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 750px) {
     :root {
         --page-padding: 35px;
     }
