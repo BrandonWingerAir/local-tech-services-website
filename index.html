@@ -38,7 +38,7 @@
             <h2>IT Support</h2> <span class="pipe">|</span> <h2>Websites & App Design</h2>
 
             <p>
-                Ridgeway's local consultant for all things technology and media.
+                Ridgeway's local consultant for all things technology and digital media.
             </p>
 
             <p>
@@ -124,16 +124,31 @@
         <h6>
             Website coded by <a href="https://brandontech.ca">Brandon Winger-Air</a> © 2024
         </h6>
-        <img src="images/cat-1.webp" alt="">
+        <img 
+            src="images/cat-1.webp" 
+            alt=""
+            onmouseover="hover(this);" 
+            onmouseout="unhover(this);"
+        >
     </footer>
 
     <script>
+        // Click to show phone number
         function showElement() {
             var element = document.getElementById("click-to-show");
             element.style.display = "none";
 
             var element = document.getElementById("phone-number");
             element.style.display = "block";
+        }
+
+        // Footer Icon Animation
+        function hover(element) {
+            element.setAttribute('src', 'images/cat-2.webp');
+        }
+
+        function unhover(element) {
+            element.setAttribute('src', 'images/cat-1.webp');
         }
     </script>
 </body>
