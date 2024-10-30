@@ -2,6 +2,7 @@
 
 :root {
     --menu-height: 44px;
+    --menu-padding: 44px;
     --page-padding: 85px;
 }
 
@@ -54,7 +55,12 @@ nav {
 .menu {
     display: flex;
     align-items: flex-end;
-    padding-top: 44px;
+}
+
+.navigation {
+    display: flex;
+    align-items: flex-end;
+    padding-top: var(--menu-padding);
 }
 
 .menu ul {
@@ -99,11 +105,33 @@ nav {
     bottom: 0.1rem;
 }
 
+.email {
+    height: 44px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.email a {
+    font-size: 1.35rem;
+    color: white;
+    margin-bottom: 1px;
+}
+
 /* Hero Section */
 .hero-section {
     position: absolute;
     bottom: 50px;
     width: 55vw;
+}
+
+.hero-content {
+    margin-bottom: 50px;
 }
 
 .hero-section h2 {
@@ -138,18 +166,16 @@ nav {
     font-weight: 600;
 }
 
-.phone-button {
-
+.hero-button {
     background: #FF8E08;
     border-radius: 25px;
     display: block;
     width: 12rem;
     text-align: center;
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.26rem;
     letter-spacing: 1px;
     padding: 0.7rem;
-    margin-top: 50px;
 }
 
 #phone-number {
@@ -225,6 +251,13 @@ footer {
 
 footer h6 {
     margin-bottom: 1.45rem;
+    font-weight: 700;
+}
+
+footer a {
+    /* color: #0d47a1; */
+    color: #000;
+    font-weight: 800;
 }
 
 footer img {
@@ -239,22 +272,40 @@ footer img {
 
     header {
         height: 40rem;
+        padding: 16px 28px 0;
     }
 
     h1 {
-        font-size: 1.56rem;
+        font-size: 1.35rem;
     }
 
     .menu {
+        padding-top: 44px;
+    }
+
+    .navigation {
         display: none;
     }
 
+    .email {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .email a {
+        font-size: 1.25rem;
+    }
+
     .hero-section {
-        width: 80%;
+        width: 85%;
+    }
+
+    .hero-content {
+        margin-bottom: 116px;
     }
 
     .hero-section h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .pipe {
@@ -267,17 +318,16 @@ footer img {
         font-size: 1.25rem;
     }
 
-    .phone-button {
+    .hero-button {
         position: relative;
         z-index: 1;
-        margin-top: 60px;
-        font-size: 1.14rem;
+        font-size: 1.19rem;
     }
 
     .hero-image {
         width: 400px;
-        right: -135px;
-        bottom: -48px;
+        right: -76px;
+        bottom: -11px;
     }
 
     .services > div {
