@@ -17,13 +17,13 @@
                 <div class="navigation">
                     <ul>
                         <li>
-                            <a href="#!">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="#!">Portfolio</a>
+                            <a href="https://brandontech.ca" target="_blank">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#!">About</a>
+                            <a href="#about">About</a>
                         </li>
                     </ul>
                     
@@ -51,7 +51,7 @@
                 <p>Ridgeway's local consultant for all things technology and digital media.</p>
 
                 <p>
-                    Specializing in computer setup/troubleshooting and programming, creating stunning websites & applications, developing intuitive mobile experiences and crafting eye-catching graphic designs.
+                    Specializing in computer administration, creating stunning websites & applications, developing intuitive mobile experiences and crafting eye-catching graphic designs.
                 </p>
 
                 <p>Get top-tier solutions tailored to your business needs.</p>
@@ -59,7 +59,7 @@
 
             <div class="hero-button">
                 <a href="#!" onclick="showElement()" id="click-to-show">
-                    <i class="fa fa-phone"></i> CLICK TO VIEW
+                    <i class="fa fa-phone"></i> Click To View
                 </a>
                 <a href="tel:289-207-4259" id="phone-number">
                     <i class="fa fa-phone"></i> 289<span>-</span>207<span>-</span>4259
@@ -76,7 +76,7 @@
 
     <section class="services">
         <div class="title-container">
-            <h3>
+            <h3 id="services">
                 Services
             </h3>
         </div>
@@ -129,15 +129,27 @@
     </section>
 
     <footer>
-        <h6>
+        <h6 id="about">
             Website coded by <a href="https://brandontech.ca">Brandon Winger-Air</a> © 2024
         </h6>
-        <img 
-            src="images/cat-1.webp" 
-            alt=""
-            onmouseover="hover(this);" 
-            onmouseout="unhover(this);"
-        >
+
+        <div>
+            <div id="hearts">
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+                <div class="heart"></div>
+            </div>
+
+            <img 
+                src="images/cat-1.webp" 
+                alt=""
+                id="cat"
+                onmouseover="hover(this);" 
+    onmouseout="unhover(this);"
+                onclick="showHearts()"
+            >
+        </div>
     </footer>
 
     <script>
@@ -150,13 +162,26 @@
             element.style.display = "block";
         }
 
-        // Footer Icon Animation
+        // Footer Icon Animations
         function hover(element) {
+            var element = document.getElementById("cat")
             element.setAttribute('src', 'images/cat-2.webp');
         }
 
         function unhover(element) {
+            var element = document.getElementById("cat")
             element.setAttribute('src', 'images/cat-1.webp');
+        }
+
+        function showHearts() {
+            var element = document.getElementById("hearts")
+            element.style.display = "block";
+            setTimeout(hideHearts, 7000);
+        }
+
+        function hideHearts() {
+            var element = document.getElementById("hearts")
+            element.style.display = "none";
         }
     </script>
 </body>
