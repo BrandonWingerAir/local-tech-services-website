@@ -212,8 +212,7 @@ nav {
 
 /* Services Section */
 .services {
-    padding: calc(var(--page-padding) - 1.5rem) var(--page-padding) 0;
-    padding-bottom: 0;
+    padding: 60px var(--page-padding) 38px;
     text-align: center;
 }
 
@@ -243,12 +242,62 @@ h4 {
     font-size: 28px;
 }
 
+/* Project Section */
+
+.projects-section {
+    padding: 61px var(--page-padding) 0;
+    border-top: 1px solid #000;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 18px;
+    padding: 0 45px;
+}
+
+.projects img {
+    width: 100%;
+}
+
+/* About Section */
+.about-section {
+    padding: 61px var(--page-padding) 0;
+}
+
+.about-section .title-container {
+    margin: 0 auto 55px;
+}
+
+.about-section h3 {
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.about img {
+    border: 4px solid #000;
+    margin-bottom: 15px;
+}
+
+.about h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+
+.about h5:last-of-type {
+    font-weight: 200;
+}
+
 /* Footer Section */
 footer {
     text-align: center;
     font-size: 1.8rem;
     border-top: 2px solid #212121;
-    margin-top: 150px;
+    margin-top: 51px;
 }
 
 footer h6 {
@@ -360,16 +409,21 @@ footer img {
     }
 
     header {
-        height: 40rem;
+        height: 39rem;
         padding: 16px 28px 0;
     }
 
     h1 {
-        font-size: 1.35rem;
+        font-size: 1.2rem;
+        top: 0;
+    }
+
+    h1 span {
+        bottom: -4px;
     }
 
     .menu {
-        padding-top: 44px;
+        padding-top: 18px;
     }
 
     .navigation {
@@ -415,11 +469,21 @@ footer img {
 
     .hero-image {
         width: 400px;
-        right: -76px;
+        right: -24vw;
         bottom: -11px;
     }
 
     .services > div {
         grid-template-columns: 1fr;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        row-gap: 7px;
+        padding: 0;
+    }
+
+    .projects img {
+        border: 1px solid #000;
     }
 }

@@ -57,7 +57,7 @@
                     Specializing in computer administration, creating stunning websites & applications, developing intuitive mobile experiences and crafting eye-catching graphic designs.
                 </p>
 
-                <p>Get top-notch solutions tailored to your business needs.</p>
+                <p>Get working solutions tailored to your business needs.</p>
             </div>
 
             <div class="hero-button">
@@ -131,8 +131,48 @@
         </div>
     </section>
 
+    <section class="projects-section">
+        <div class="title-container">
+            <h3 id="projects">
+                Projects
+            </h3>
+        </div>
+
+        <div class="projects">
+            <a href="https://www.philipcomanphotography.com/" target="_blank">
+                <img src="projects/philip-coman-photography-website.png" alt="">
+            </a>
+            <a href="https://brandonwingerair.github.io/modern-construction-services-website/" target="_blank">
+                <img src="projects/modern-construction-services-website.png" alt="">
+            </a>
+            <a href="https://brandonwingerair.github.io/cafe-lounge-restaurant-site/" target="_blank">
+                <img src="projects/cafe-restaurant-lounge-website.png" alt="">
+            </a>
+            <a href="https://brandonwingerair.github.io/tech-dev-landing-page/" target="_blank">
+                <img src="projects/tech-dev-agency-website.png" alt="">
+            </a>
+        </div>
+
+    </section>
+
+    <section class="about-section">
+        <div class="title-container">
+            <h3 id="about">
+                About Me
+            </h3>
+        </div>
+
+        <div class="about">
+            <a href="https://brandonwingerair.github.io/full-stack-dev-portfolio/" target="_blank">
+                <img src="images/bwa-profile.png" alt="">
+            </a>
+            <h5>Brandon Winger-Air</h5>
+            <h5>Web App Developer & Designer</h5>
+        </div>
+    </section>
+
     <footer>
-        <h6 id="about">
+        <h6>
             Website coded by <a href="https://brandontech.ca">Brandon Winger-Air</a> © 2024
         </h6>
 
@@ -149,43 +189,12 @@
                 alt=""
                 id="cat"
                 onmouseover="hover(this);" 
-    onmouseout="unhover(this);"
+                onmouseout="unhover(this);"
                 onclick="showHearts()"
             >
         </div>
     </footer>
 
-    <script>
-        // Click to show phone number
-        function showElement() {
-            var element = document.getElementById("click-to-show");
-            element.style.display = "none";
-
-            var element = document.getElementById("phone-number");
-            element.style.display = "block";
-        }
-
-        // Footer Icon Animations
-        function hover(element) {
-            var element = document.getElementById("cat")
-            element.setAttribute('src', 'images/cat-2.webp');
-        }
-
-        function unhover(element) {
-            var element = document.getElementById("cat")
-            element.setAttribute('src', 'images/cat-1.webp');
-        }
-
-        function showHearts() {
-            var element = document.getElementById("hearts")
-            element.style.display = "block";
-            setTimeout(hideHearts, 7000);
-        }
-
-        function hideHearts() {
-            var element = document.getElementById("hearts")
-            element.style.display = "none";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
