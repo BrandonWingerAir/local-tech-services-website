@@ -49,6 +49,7 @@ h1 span {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 2rem;
 }
 
@@ -60,7 +61,7 @@ nav {
 .navigation {
     display: flex;
     align-items: flex-end;
-    padding-top: var(--menu-padding);
+    padding-bottom: 1px;
 }
 
 .menu ul {
